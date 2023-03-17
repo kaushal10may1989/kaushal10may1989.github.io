@@ -298,11 +298,6 @@
             const subject = "Let's Connect";
             const message = formData?.get('enquiry_message').trim();
             window.location.href = `mailto:${to}?subject=${subject}&body=${message}`;
-            console.log({
-                to: to,
-                subject: subject,
-                message: message
-            })
         }
         const form = document.getElementById("contact_submit");
         form.addEventListener("submit", handleContactSubmit, false)
