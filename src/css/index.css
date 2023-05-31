@@ -38,7 +38,22 @@ body {
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
-
+.displaydiv
+{
+    font-size: 210px;
+    color: transparent;
+    position: absolute;
+    text-align: center;
+    user-select: none;
+    z-index: -1;
+    word-break: break-all;
+    height: 375px;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    font-family: Nunito, sans-serif;
+    
+}
 section {
     position: relative;
 }
