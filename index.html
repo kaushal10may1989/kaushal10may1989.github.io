@@ -65,7 +65,7 @@
                 <div class="banner-data">
                     <div class="banner-details">
                         <div class="banner-logo">
-                            <img src="./src/images/am_logo.jpg" alt="Divine Blessings" class="banner-logo-image">
+                            <img src="./src/images/am_logo.jpg" alt="Divine Blessings" class="banner-logo-image" lazy="true">
                         </div>
                         <h1 class="banner-title">
                             <p>Push Your Life</p>
@@ -88,7 +88,7 @@
                         </a>
                     </div>
                     <div class="banner-image">
-                        <img src="./src/images/banner.JPG" alt="Anuradha Minocha">
+                        <img src="./src/images/banner.JPG" alt="Anuradha Minocha" lazy="true">
                     </div>
                 </div>
             </div>
@@ -101,19 +101,19 @@
                     <div class="help-options">
                         <div class="help-option">
                             <div class="option-media">
-                                <img src="./src/images/help-option-1.jpg" alt="One on One session">
+                                <img src="./src/images/help-option-1.jpg" alt="One on One session" lazy="true">
                             </div>
                             <div class="option-label">One on One session</div>
                         </div>
                         <div class="help-option">
                             <div class="option-media">
-                                <img src="./src/images/help-option-2.jpg" alt="Group Sessions">
+                                <img src="./src/images/help-option-2.jpg" alt="Group Sessions" lazy="true">
                             </div>
                             <div class="option-label">Group Sessions</div>
                         </div>
                         <div class="help-option">
                             <div class="option-media">
-                                <img src="./src/images/help-option-3.JPG" alt="Ho'oponopono Free Webinar">
+                                <img src="./src/images/help-option-3.JPG" alt="Ho'oponopono Free Webinar" lazy="true">
                             </div>
                             <div class="option-label">Ho'oponopono Free Webinar</div>
                         </div>
@@ -125,7 +125,7 @@
             <div class="container">
                 <div class="about_me-data">
                     <div class="about_me-image">
-                        <img src="./src/images/about-me.jpg" alt="Anuradha Minocha">
+                        <img src="./src/images/about-me.jpg" alt="Anuradha Minocha" lazy="true">
                     </div>
                     <div class="about_me-details">
                         <div class="details-title">About Me</div>
@@ -153,10 +153,10 @@
                     </div>
                 </div>
                 <div class="about_me_videos">
-                    <iframe src="https://www.youtube.com/embed/1dJAXmr0X-c?rel=0" frameborder="0"
+                    <iframe lazy="true" src="https://www.youtube.com/embed/1dJAXmr0X-c?rel=0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         class="yt-video" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/LNHKGaP7FSU?rel=0" frameborder="0"
+                    <iframe lazy="true" src="https://www.youtube.com/embed/LNHKGaP7FSU?rel=0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         class="yt-video" allowfullscreen></iframe>
                 </div>
@@ -369,7 +369,7 @@
             </div>
         </div>
     </footer>
-    <script>
+    <script lazy="true">
         function handleContactSubmit(e) {
             e.preventDefault();
             const formData = new FormData(e.target);
@@ -381,7 +381,7 @@
         const form = document.getElementById("contact_submit");
         form.addEventListener("submit", handleContactSubmit, false)
     </script>
-    <script>
+    <script lazy="true">
         // Copyright Date
         const year = new Date();
         const yearElement = document.getElementById("copyright_date");
