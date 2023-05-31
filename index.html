@@ -156,10 +156,10 @@
                     </div>
                 </div>
                 <div class="about_me_videos">
-                    <iframe loading="lazy" src="https://www.youtube.com/embed/1dJAXmr0X-c?rel=0" frameborder="0"
+                    <iframe loading="lazy"  data-src="https://www.youtube.com/embed/1dJAXmr0X-c?rel=0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         class="yt-video" allowfullscreen></iframe>
-                    <iframe loading="lazy" src="https://www.youtube.com/embed/LNHKGaP7FSU?rel=0" frameborder="0"
+                    <iframe loading="lazy"  data-src="https://www.youtube.com/embed/LNHKGaP7FSU?rel=0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         class="yt-video" allowfullscreen></iframe>
                 </div>
@@ -390,5 +390,18 @@
         const yearElement = document.getElementById("copyright_date");
         yearElement.innerText = year.getFullYear();
     </script>
+
+<script >
+    // Copyright Date
+    window.onload=function(e){
+        var arr=document.getElementsByClassName("yt-video");
+        arr=[...arr];
+        arr.forEach(element => {
+            let src=element.getAttribute('data-src'); 
+            element.src=src;
+        });
+
+    }
+</script>
 </body>
 </html>
