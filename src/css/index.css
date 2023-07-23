@@ -798,6 +798,54 @@ h6 {
     }
 }
 
+.blog section {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.blog h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog ul {
+    list-style: none;
+    padding: 0;
+}
+
+.blog li {
+    margin-bottom: 10px;
+}
+
+.blog a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}
+
+.blog span {
+    color: #888;
+    font-size: 14px;
+    
+}
+
+/* Responsive style for mobile devices */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+    
+    span {
+        font-size: 12px;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .container {
         max-width: var(--size-xl);
